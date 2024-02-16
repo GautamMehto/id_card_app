@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set Universal value to all Tag */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Make Card responsive by removing the fixed width and height. */
+@media screen and (max-width:520px) {
+    .ProfileBox {
+        height: auto;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .LeftSide {
+        width: 50%;
+        margin-left: 0;
+        margin-top: 1rem;
+        overflow: visible;
+    }
+
+    .LeftSide div {
+        width: 11rem;
+        height: 11rem;
+    }
+    .LeftSide img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .RightSide {
+        padding: 1.5rem;
+        text-align: center;
+    }
+}
